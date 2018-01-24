@@ -1,0 +1,178 @@
+html, body {
+  height: 100%;
+}
+
+.container {
+  overflow: hidden;
+  text-align: left;
+  height: 100%;
+  animation: rainbow 10s infinite;
+  left:0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
+  background-size: 1200% 1200%;
+
+  -webkit-animation: rainbow 18s ease infinite;
+  -z-animation: rainbow 18s ease infinite;
+  -o-animation: rainbow 18s ease infinite;
+  animation: rainbow 18s ease infinite;
+}
+
+@-webkit-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@-moz-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@-o-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+
+.christy {
+  animation: unicorn 9s infinite;
+  font-family: monospace;
+  font-size: 50pt;
+  font-weight: 700;
+  margin-left: 30px;
+}
+
+.world {
+  animation: unicorn 9s 500ms infinite;
+}
+
+.scallops {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  bottom: -63px;
+}
+
+.scallop {
+  height: 125px;
+  width: 125px;
+  border-radius: 50%;
+  background: #ff2400;
+}
+
+.one {
+  z-index: 3;
+}
+
+.one .scallop {
+  animation: scallop-rainbow 18s 1s ease infinite;
+}
+
+.two {
+  z-index: 2;
+  bottom: -8px;
+  left: -66px;
+}
+
+.two .scallop {
+  animation: scallop-rainbow 18s 3s ease infinite;
+}
+
+.three {
+  z-index: 1;
+  bottom: 43px;
+}
+
+.three .scallop {
+  animation: scallop-rainbow 18s 5s ease infinite;
+}
+
+.o {
+  text-align: right;
+  font-family: monospace;
+  font-size: 55pt;
+  margin: 0;
+  margin-right: 30px;
+  color: #fff;
+  animation: flicker 5s infinite;
+}
+
+@keyframes flicker {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes unicorn {
+  0% {
+    color: #ff2400;
+  }
+  10% {
+    color: #e81d1d;
+  }
+  20% {
+    color: #e8b71d;
+  }
+  30% {
+    color: #e3e81d;
+  }
+  40% {
+    color: #1de840;
+  }
+  50% {
+    color: #1ddde8;
+  }
+  60% {
+    color: #2b1de8;
+  }
+  70% {
+    color: #dd00f3;
+  }
+  80% {
+    color: #dd00f3;
+  }
+}
+
+@keyframes scallop-rainbow {
+  0% {
+    background: #ff2400;
+  }
+  10% {
+    background: #e81d1d;
+  }
+  20% {
+    background: #e8b71d;
+  }
+  30% {
+    background: #e3e81d;
+  }
+  40% {
+    background: #1de840;
+  }
+  50% {
+    background: #1ddde8;
+  }
+  60% {
+    background: #2b1de8;
+  }
+  70% {
+    background: #dd00f3;
+  }
+  80% {
+    background: #dd00f3;
+  }
+}
